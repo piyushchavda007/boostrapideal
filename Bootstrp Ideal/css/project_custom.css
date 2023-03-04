@@ -1,0 +1,259 @@
+/*
+
+1 Reset Css #res
+2 Font Face #face 
+3 Inputs #input
+4 Global Styles #glob
+5 Wrappers #wrap
+6 Custom CSS #custom
+7 Media Query #media
+
+*/
+
+/*================================= 1 Reset Css ( #res ) =================================*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{text-decoration:none;outline:0;margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;color:#006db7;transition:all 0.5s ease 0s;}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ababab;margin:50px auto; padding:0}
+
+img {-ms-interpolation-mode: bicubic; border: 0; height: auto; vertical-align: middle; transition:all 0.5s ease 0s;}
+.ie8 img {height: auto; width: auto\9;}
+.ie8 img.size-large {max-width: 60%; width: auto;}
+:hover{transition:all 0.5s ease 0s;}
+
+ul{list-style:none; margin:0; padding:0;}
+li{list-style:none;}
+
+#wp-toolbar ul:after{content:none}
+
+.last_li , .last{margin-right:0 !important; padding-right:0 !important}
+.first_li, .first{margin-left:0 !important; padding-left:0 !important}
+
+.clearfix:after , ul:after , ol:after ,  .full_row:after
+{content:"";display:block;clear:both;visibility:hidden;line-height:0;height:0}html[xmlns] .clearfix{display:block}* html .clearfix{height:1%}
+
+/*================================= 2 Font Face ( #face ) =================================*/
+/* TypoGraphy */
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+
+
+/*================================= 3  Inputs ( #input ) =================================*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance:none; margin:0;}
+::-webkit-input-placeholder {color:#343434; font-style:normal;}
+:-moz-placeholder {color:#343434; font-style:normal;}
+::-moz-placeholder {color:#343434; font-style:normal;}
+:-ms-input-placeholder {color: #343434; font-style:normal;}
+
+button::-moz-focus-inner {border: 0}
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+input[type=number] {-moz-appearance:textfield}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0}
+
+input[type=submit]{padding:12px 20px; background:red; font-weight:normal; color:#fff; display:block; margin:0 auto}
+input[type=submit] , input[type=button]{cursor:pointer; border:0}
+input:focus{outline:none;}
+body textarea{resize:none; height:270px; font-size:18px; font-style:italic; color:#656565; line-height:31px; padding:15px 0 0 25px; border-color:#b7b7b7; }
+
+input[type="text"], input[type="tel"], input[type="password"], input[type="date"], input[type="email"], input[type="number"], textarea{background:#f8f7f7; border: 1px solid #d6d5d2; border-radius:0; color: #343434; font-size: 21px; font-weight: 400; line-height: 26px; width:100%; height:50px; padding:5px 15px; box-shadow:none; -webkit-appearance:none}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
+background:#f3f3f3}
+
+form label{color: #006db7; font-size: 16px; display: block; font-weight: 900; margin-bottom:10px; text-transform:uppercase}
+
+.form_row{padding-bottom:25px}
+.form_row.msg_row{padding-bottom:10px}
+.form_row.submitrow{padding-bottom:0}
+
+input:required{box-shadow:none}
+
+/*input:required:focus{background-color: rgba(223, 73, 73, 0.2); border: 1px solid #df4949; box-shadow:none} */
+
+*{-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+/*================================= 4 Global Styles (#glob) =================================*/
+
+/* Gobal #GAB */
+.x:before 
+{position:absolute; content:''}
+
+/* Vertical Middle */
+.x:before /*Parent Before*/
+{content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em}
+
+.x /* Child class */
+{display: inline-block; vertical-align: middle}
+
+
+/* HR Rules */
+hr{}
+
+/* Image Alignment */
+.alignnone , a img.alignnone {margin: 5px 0 50px}
+.aligncenter, div.aligncenter {display: block; margin: 5px auto 60px auto}
+.alignright , a img.alignright{float:right; margin: 5px 0 60px 60px}
+.alignleft , a img.alignleft {float: left; margin: 5px 60px 60px 0}
+a img.aligncenter {display: block;  margin-left: auto; margin-right: auto}
+
+
+h1 , h2 , h3 , h4 , h5 , h6{}
+
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+
+p , .content_row ul li, .content_row ol li{color: #343434; font-size: 20px; font-weight: 300; line-height: 30px; margin-bottom:20px}
+
+p:last-child{margin-bottom:0}
+p.intro{color: #666; font-size: 24px; font-weight: 300; line-height: 34px; margin-bottom:20px}
+
+p a{color:#006db7; font-weight:bold}
+p strong{font-weight:900}
+p em{font-style:italic}
+
+p a:hover{text-decoration:underline}
+
+.content_row ul , .content_row ol{padding-bottom:10px}
+.content_row ul li, .content_row ol li{margin-bottom:5px; position:relative; color:#343434}
+
+.content_row ul li{padding-left:20px}
+.content_row ul li:before {color: #444444; content: "•"; font-weight: bold; left: 0; position: absolute; font-size:6px;}
+
+.content_row ul ul , .content_row ol ul , .content_row ol ol{padding:5px 0}
+
+.content_row ol{counter-reset: section}
+.content_row ol li{padding-left:40px}
+
+.content_row ol > li:before {color:#343434; content:counter(section, decimal) "."; counter-increment:section; padding-right:5px; font-size:18px; position:absolute; left:0}
+
+.content_row ol ul li{padding-left:20px}
+.content_row ol ol li{list-style:lower-alpha outside; padding-left:30px; margin-left:20px}
+
+.content_row ol ol li:before{content:none}
+.content_row ol ol li{padding-left:10px}
+
+a:focus, a:hover{outline:none; text-decoration:none;}
+
+.visible_tab{display:none}
+
+
+/* ================================= 5 Wrappers #wrap ================================= */	
+
+body{background:#f6f6f6; font-family: 'Roboto Condensed', sans-serif; line-height: 1; color:#343434}
+
+.container{max-width:1150px; width:100%}
+.full_row{width:100%; float:none; margin:0 auto}
+.small_container{max-width:850px; margin:0 auto; float:none}
+.site_full{max-width:1690px; margin:0 auto; position:relative}
+
+
+/* ================================= 6 Custom CSS #custome ================================= */	
+
+
+
+/* ================================= 7 Media Query #media ================================= */	
+/********************************* Mobile Potrait #MP ********************************/
+@media screen and (max-width: 320px) and (orientation: portrait) {}
+
+/********************************* Mobile Potrait ********************************/
+@media screen and (max-width: 480px) and (orientation: portrait) {}
+
+/********************************* Mobile landscape ********************************/
+@media screen and (max-width: 480px) and (orientation: landscape) {}
+
+/* ================================= Common For All mobile definitions #mx ================================= */
+@media all and (max-width: 767px) {
+
+html * {max-height:1000000px}	
+
+.x
+{display:none}
+
+h1{font-size:28px; line-height:normal}
+h2{font-size:26px}
+h3{font-size:20px}
+h4{font-size:18px}
+p, .content_row ul li, .content_row ol li{font-size:18px; line-height:24px}
+p.intro{font-size:20px; line-height:30px}
+
+/* Image Alignment */
+.alignnone , a img.alignnone , .aligncenter, div.aligncenter ,  .alignright , a img.alignright , .alignleft , a img.alignleft{margin: 30px auto; float:none}
+
+}
+
+/********************************* ipad portrait #ip ********************************/
+@media only screen and (min-width : 768px) and (max-width: 1000px) {
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {float: left}
+.col-md-12 {width: 100%}
+.col-md-11 {width: 91.66666667%}
+.col-md-10 {width: 83.33333333%}
+.col-md-9 {width: 75%}
+.col-md-8 {width: 66.66666667%}
+.col-md-7 {width: 58.33333333%}
+.col-md-6 {width: 50%}
+.col-md-5 {width: 41.66666667%}
+.col-md-4 {width: 33.33333333%}
+.col-md-3 {width: 25%}
+.col-md-2 {width: 16.66666667%}
+.col-md-1 {width: 8.33333333%}
+
+h1{font-size:38px}
+h2{font-size:28px}
+h3{font-size:22px}
+h4{font-size:21px}
+p, .content_row ul li, .content_row ol li{font-size:18px}
+p.intro{font-size:20px}
+
+.hidden-tab 
+{display:none}
+
+/* Image Alignment */
+.alignnone , a img.alignnone , .aligncenter, div.aligncenter ,  .alignright , a img.alignright , .alignleft , a img.alignleft{margin: 30px auto; float:none}
+
+.visible_tab{display:block !important}
+
+}
+
+/********************************* ipad landscape #il ********************************/
+@media only screen and (min-width : 1001px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width : 1025px) and (max-width: 1100px) {
+
+}
+
+
+
+/* ================================= Small Computer #Sc ================================= */
+@media only screen and (min-width : 1300px) {
+	
+.first_col , .first_li{padding-left:0 !important; margin-left:0 !important}
+.last_col , .last_li{padding-right:0 !important; margin-right:0 !important}
+
+}
+
+	
+/* ================================= Large Computer #lc ================================= */
+@media screen and (min-width: 1450px) {}
+
+/* IE10 Only CSs */
+@media screen and (min-width:0\0) {}
+
+/* ie10, ie11+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+
+
+
+.line {background:gray; position:relative; height:2px;}
+.line:before {content:''; background:red; width:30%; height:2px; position:absolute;}
